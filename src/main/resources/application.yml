@@ -1,6 +1,8 @@
 spring:
+  banner:
+    location: classpath:banner.txt
   application:
-    name: backend
+    name: DGP
   data:
     rest:
       base-path: /
