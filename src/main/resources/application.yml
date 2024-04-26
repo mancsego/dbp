@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: backend
+  data:
+    rest:
+      base-path: /
+  jpa:
+    hibernate:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://database:5432/${POSTGRES_DB}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: true
+    change-log: classpath:db-changelog.yaml
