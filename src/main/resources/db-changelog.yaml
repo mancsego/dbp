@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: changelog/groups.yaml
+  - include:
+      file: changelog/users.yaml
