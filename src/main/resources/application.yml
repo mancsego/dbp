@@ -1,3 +1,12 @@
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: /dev
+      prefix: stdout
+      buffered: false
+      suffix:
+      file-date-format:
 spring:
   devtools:
     livereload:
