@@ -5,6 +5,11 @@ This project contains a simple CRUD functionality for group entities which are a
 ## How to start up project
 To start the project, you need to have docker installed on your host. There are no other requirements.
 
+Copy the .env.example file to .env and adjust the values to your needs.
+The only restriction is the jwt secret which must be an at least 256 bits long HMAC hash string.
+
+Then run the following command in the root directory of the project:
+
 ```shell
 docker compose up
 ```
