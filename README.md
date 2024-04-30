@@ -52,4 +52,6 @@ curl -X GET \
 graph LR
 A[Backend / API] -- write --> B(PostGre)
 B(PostGre) -- read --> A
+C(Frontend) -- call --> A
+A -- respond --> C
 ```
